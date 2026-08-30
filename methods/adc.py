@@ -193,7 +193,7 @@ class model(nn.Module):
 
         if self.compression != None:
             self.batch_compression = self.compression ** (1/2)
-            self.token_compression = self.batch_compression ** (1/2)
+            self.token_compression = self.compression ** (1/2)
 
 
         # Wrap last block with our compression method
